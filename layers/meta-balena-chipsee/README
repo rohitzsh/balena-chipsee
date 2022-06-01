@@ -1,0 +1,38 @@
+This README file contains information on the contents of the meta-chipsee layer.
+
+Please see the corresponding sections below for details.
+
+Dependencies
+============
+
+  URI: <[meta-raspberrypi](https://git.yoctoproject.org/meta-raspberrypi)>
+  branch: <[dunfell](https://git.yoctoproject.org/meta-raspberrypi/log/?h=dunfell)>
+
+  URI: <[meta-raspberrypi](https://github.com/openembedded/meta-openembedded.git)>
+  branch: <[dunfell](https://github.com/openembedded/meta-openembedded/tree/dunfell)>
+
+
+Patches
+=======
+
+Please submit any patches against the meta-chipsee layer to the maintainer:
+
+Maintainer: rohit Sharma <rohitsharmazsh@gmail.com>
+
+Table of Contents
+=================
+
+  I. Adding the meta-chipsee layer to your build
+  II. Building chipsee image
+
+I. Adding the meta-chipsee layer to your build
+=================================================
+
+Run 'bitbake-layers add-layer meta-chipsee'
+
+
+II. Building chipsee image
+=================================================
+run `bitbake chipsee-core-image-minimal`
+
+This image has linux username `user` with password `n3u7o30A82n7vNVr`
