@@ -92,10 +92,3 @@ BB_DISKMON_DIRS = "\
 CONF_VERSION = "2"
 
 HOSTTOOLS += "docker iptables"
-
-IMAGE_INSTALL:append += " \ 
-    cslcd \
-    gt9xx \
-    pwmbl \
-    lsm6ds3 \
-"

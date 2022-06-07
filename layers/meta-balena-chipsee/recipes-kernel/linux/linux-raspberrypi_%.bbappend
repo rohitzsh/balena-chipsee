@@ -35,9 +35,3 @@ do_deploy[prefuncs] += "do_overlays"
 # we have to ensure the overlays list is populated so that
 # the boot partition can be generated correctly
 do_install[nostamp] = "1"
-
-SRC_URI:append += " \
-    file://cs-i2c0-overlay.dts;subdir=git/arch/${ARCH}/boot/dts \
-    file://gt9xx-overlay.dts;subdir=git/arch/${ARCH}/boot/dts \
-    file://pwm-backlight-overlay.dts;subdir=git/arch/${ARCH}/boot/dts \
-"
