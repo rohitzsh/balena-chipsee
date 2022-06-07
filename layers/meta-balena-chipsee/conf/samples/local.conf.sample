@@ -26,7 +26,7 @@ DISABLE_VC4GRAPHICS:remove:raspberrypi4-64 = "1"
 DISABLE_VC4GRAPHICS:remove:raspberrypi0-2w-64 = "1"
 
 # RPI BSP uses uncompressed kernel images by default
- ="zImage"
+KERNEL_IMAGETYPE="zImage"
 KERNEL_BOOTCMD="bootz"
 
 # When u-boot is enabled we need to use the "Image" format and the "booti"
@@ -92,3 +92,10 @@ BB_DISKMON_DIRS = "\
 CONF_VERSION = "2"
 
 HOSTTOOLS += "docker iptables"
+
+IMAGE_INSTALL:append += " \ 
+    cslcd \
+    gt9xx \
+    pwmbl \
+    lsm6ds3 \
+"

@@ -4,8 +4,8 @@ SECTION = "kernel/modules"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
 
-SRCREV = "269f07ccda39f38b79518d6e33ea615885bc46e9"
-SRC_URI = "git://github.com/rohitzsh/chipsee-driver-lsm6ds3.git;branch=master;protocol=https"
+SRCREV = "7d1885d4d7adf6157e8e2261b1287a818cf2ff54"
+SRC_URI = "git://github.com/rohitzsh/chipsee-driver-lsm6ds3.git;branch=5.10;protocol=https"
 
 S="${WORKDIR}/git"
 

@@ -4,8 +4,8 @@ SECTION = "kernel/modules"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
 
-SRCREV = "8ff9bfb5b9799844c730c596bed5f601d6c80177"
-SRC_URI = "git://github.com/rohitzsh/chipsee-driver-gt9xx.git;branch=master;protocol=https"
+SRCREV = "fbaac66db25582be439dc2db0fcfd0cf796264ed"
+SRC_URI = "git://github.com/rohitzsh/chipsee-driver-gt9xx.git;branch=5.10;protocol=https"
 
 S="${WORKDIR}/git"
 
