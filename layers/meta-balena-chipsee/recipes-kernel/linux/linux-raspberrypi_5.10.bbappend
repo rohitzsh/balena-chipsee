@@ -21,13 +21,17 @@ SRC_URI:append = " \
 	file://0010-dts-overlays-Add-UniPi-overlays.patch \
 	file://0001-seeed-studio-can-bus-v2-Add-dtbo-for-this-can-bus.patch \
 	file://0011-USB-serial-Add-support-for-more-Quectel-modules.patch \
-    file://cs-i2c0-overlay.dts;subdir=git/arch/${ARCH}/boot/dts/overlays \
-    file://gt9xx-overlay.dts;subdir=git/arch/${ARCH}/boot/dts/overlays \
 "
 
 SRC_URI:append:rt-rpi-300 = " \
 	file://rt-rpi-300-Add-changes-for-this-dt.patch \
 	file://rt-rpi-Add-ch-432t-driver-for-this-chip.patch \
+"
+
+# Chipsee device specific devicetree overlay patch
+SRC_URI:append:chipsee-ppc-cm4-70 = " \
+    file://0001-Add-cs-i2c0-overlay.dts.patch \
+    file://0001-Add-gt9xx-overlay.dts.patch \
 "
 
 # BalenaOS already disables gcc plugins,
