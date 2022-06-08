@@ -32,12 +32,14 @@ SRC_URI:append:rt-rpi-300 = " \
 SRC_URI:append:chipsee-ppc-cm4-70 = " \
     file://0001-Add-cs-i2c0-overlay.dts.patch \
     file://0001-Add-gt9xx-overlay.dts.patch \
+    file://0001-Add-pwm-backlight-overlay.dts.patch \
 "
 
 # Chipsee device specific devicetree overlay patch for raspberrypicm4-ioboard
 SRC_URI:append:raspberrypicm4-ioboard = " \
     file://0001-Add-cs-i2c0-overlay.dts.patch \
     file://0001-Add-gt9xx-overlay.dts.patch \
+    file://0001-Add-pwm-backlight-overlay.dts.patch \
 "
 
 # BalenaOS already disables gcc plugins,
