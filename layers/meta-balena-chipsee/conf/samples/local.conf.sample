@@ -92,3 +92,5 @@ BB_DISKMON_DIRS = "\
 CONF_VERSION = "2"
 
 HOSTTOOLS += "docker iptables"
+
+CMDLINE += " loglevel=3 vt.global_cursor_default=0 plymouth.enable=0 "
