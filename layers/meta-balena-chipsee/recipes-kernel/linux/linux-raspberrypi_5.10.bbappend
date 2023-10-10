@@ -29,7 +29,7 @@ SRC_URI:append:rt-rpi-300 = " \
 "
 
 # Chipsee device specific devicetree overlay patch
-SRC_URI:append:chipsee-ppc-cm4-70 = " \
+SRC_URI:append:chipsee-ppc-cm4 = " \
     file://0001-Add-cs-i2c0-overlay.dts.patch \
     file://0001-Add-gt9xx-overlay.dts.patch \
     file://0001-Add-pwm-backlight-overlay.dts.patch \
