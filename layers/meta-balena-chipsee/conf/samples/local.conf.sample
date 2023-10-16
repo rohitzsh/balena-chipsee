@@ -93,7 +93,3 @@ BB_DISKMON_DIRS = "\
 CONF_VERSION = "2"
 
 HOSTTOOLS += "docker iptables"
-
-DISABLE_SPLASH = 1
-# Kernel command line
-OS_KERNEL_CMDLINE = "console=null quiet splash vt.global_cursor_default=0 consoleblank=0"
